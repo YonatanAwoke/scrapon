@@ -19,7 +19,7 @@ async def scrape_addisbiz_paginated_async(base_url, max_page, fields_to_include)
     data = []
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
 
