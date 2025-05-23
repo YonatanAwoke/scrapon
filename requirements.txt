@@ -6,3 +6,5 @@ pandas
 playwright
 nest_asyncio
 asyncio
+requests
+beautifulsoup4
