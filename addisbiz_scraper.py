@@ -15,6 +15,10 @@ import pandas as pd
 import json
 from io import StringIO
 
+import subprocess
+subprocess.run(["playwright", "install", "chromium"])
+
+
 async def scrape_addisbiz_paginated_async(base_url, max_page, fields_to_include):
     data = []
 
